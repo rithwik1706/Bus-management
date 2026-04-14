@@ -4,6 +4,7 @@ A full-stack real-time bus tracking system that enables administrators to manage
 
 Live Demo: https://busmanagement-black.vercel.app/
 
+
 Features
 Role-based authentication (Admin / Driver)
 Real-time bus tracking with live location updates
@@ -15,6 +16,8 @@ Frontend: React
 Backend: Node.js, Express.js
 Database: MongoDB
 Deployment: Vercel + Render
+
+
 Setup
 git clone https://github.com/rithwik1706/bus-management.git
 cd bus-management
