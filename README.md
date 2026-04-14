@@ -9,7 +9,8 @@ Real-time bus tracking with live location updates
 Admin dashboard to manage buses and routes
 Driver panel for location sharing
 Secure API integration
-🛠️ Tech Stack
+
+Tech Stack
 Frontend: React
 Backend: Node.js, Express.js
 Database: MongoDB
