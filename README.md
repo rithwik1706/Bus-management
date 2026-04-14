@@ -24,6 +24,11 @@ https://busmanagement-black.vercel.app/
 
 ---
 
+## Preview
+https://busmanagement-black.vercel.app/
+
+---
+
 ## Setup
 
 ```bash
