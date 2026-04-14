@@ -12,7 +12,8 @@ function Login() {
   const login = async () => {
     setLoading(true);
     try {
-      axios.post("https://bus-management-7bxs.onrender.com/api/auth/login",  {
+      const res=
+      await axios.post("https://bus-management-7bxs.onrender.com/api/auth/login",  {
         email,
         password
       });
