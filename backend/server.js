@@ -5,6 +5,9 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const authRoutes = require("./routes/auth");
 
+require("dotenv").config();
+
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(cors());
@@ -17,8 +20,7 @@ const io = new Server(server, {
 });
 
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/busTracker")
-.then(() => console.log("MongoDB Connected"))
+mongoose.connect(process.env.MONGO_URI).then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
 let buses = {}; // store all buses
@@ -42,7 +44,6 @@ io.on("connection", (socket) => {
 app.get("/", (req, res) => {
   res.send("Bus Tracker Backend Running");
 });
-
-server.listen(5000, () => {
-  console.log("Server running on port 5000");
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
